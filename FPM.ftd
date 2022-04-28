@@ -5,4 +5,3 @@ zip: github.com/fifthtry/fifthtry-brand-switcher/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/brand-switcher as bs
 
--- fpm.auto-import: bs
