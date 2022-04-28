@@ -6,10 +6,10 @@
 
 -- bs.brand-data list brand:
 
--- brand: cDoc
+-- brand: Continuous Documentation
 index: 1
 logo: $assets.files.assets.images.doc-framework.png
-url: https://fifthtry.github.io/cdoc-doc/
+url: https://www.fifthtry.com/
 sub-title: `cdoc`: FifthTry Continuous Documentation
 
 `cdoc` is an open source web application that integrates with Github and works like continuous integration.
@@ -39,16 +39,13 @@ sub-title: `ftd` package manager
 - Distributed Package Manager
 - Translation Tracking
 
--- brand: ftd-py
+-- brand: Documentation Framework
 index: 4
 logo: $assets.files.assets.images.home.png
-url: https://fifthtry.github.io/python.ftd.dev/
-sub-title: `ftd-py` Documentation
+url: https://df.fifthtry.com/
+sub-title: Documentation Framework
 
-`ftd-py`: Python Package for Working With FTD/FPM
-
-- Python Package for Working With `FTD/FPM`
-- `ftd_django` is a Python package
+This document describes how to document a web application, written in Django, with HTML/CSS/JS as the frontend.
 
 
 
