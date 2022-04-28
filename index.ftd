@@ -6,7 +6,7 @@
 
 -- bs.brand-data list brand:
 
--- brand: Continuous Documentation
+-- brand: cDoc
 index: 1
 logo: $assets.files.assets.images.doc-framework.png
 url: https://www.fifthtry.com/
@@ -39,7 +39,7 @@ sub-title: `ftd` package manager
 - Distributed Package Manager
 - Translation Tracking
 
--- brand: Documentation Framework
+-- brand: dF
 index: 4
 logo: $assets.files.assets.images.home.png
 url: https://df.fifthtry.com/
