@@ -39,7 +39,7 @@ sub-title: `ftd` package manager
 - Distributed Package Manager
 - Translation Tracking
 
--- brand: The dF
+-- brand: dF
 index: 4
 logo: $assets.files.assets.images.home.png
 url: https://df.fifthtry.com/
