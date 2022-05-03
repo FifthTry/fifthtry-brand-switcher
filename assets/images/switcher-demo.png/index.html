@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>assets/images/switcher-demo.png.ftd</title>
         <script type="ftd" id="ftd-data">{
-  "fifthtry.github.io/brand-switcher/assets/images/switcher-demo.png#src@0": {
+  "fifthtry.github.io/fifthtry-brand-switcher/assets/images/switcher-demo.png#src@0": {
     "value": {
       "$kind$": "light",
-      "dark": "-/fifthtry.github.io/brand-switcher/assets/images/switcher-demo.png",
-      "light": "-/fifthtry.github.io/brand-switcher/assets/images/switcher-demo.png"
+      "dark": "-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/switcher-demo.png",
+      "light": "-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/switcher-demo.png"
     },
     "dependencies": {
       "0": [
@@ -30,7 +30,7 @@
           "condition": true,
           "dependency_type": "Variable",
           "parameters": {
-            "fifthtry.github.io/brand-switcher/assets/images/switcher-demo.png#src@0": {
+            "fifthtry.github.io/fifthtry-brand-switcher/assets/images/switcher-demo.png#src@0": {
               "default": {
                 "important": false,
                 "reference": null,
@@ -54,9 +54,7 @@
   },
   "ftd#device": {
     "value": "desktop",
-    "dependencies": {
-      "$value#kind$": []
-    }
+    "dependencies": {}
   },
   "ftd#follow-system-dark-mode": {
     "value": true,
@@ -236,7 +234,7 @@ body.fpm-dark .ft_md a:visited code {
 }</style>
     </head>
     <body>
-        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0:main" src="-/fifthtry.github.io/brand-switcher/assets/images/switcher-demo.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-decoration: none; white-space: initial"></div><style>
+        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0:main" src="-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/switcher-demo.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-decoration: none; white-space: initial"></div><style>
 
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: normal;
@@ -966,6 +964,9 @@ let ftd_utils = {
     handle_action: function (id, target_variable, value, data, ftd_external_children) {
         var styles_edited = [];
         let visibility_change = false;
+        if (ftd_utils.get_data_value(data, target_variable) === value) {
+            return;
+        }
         handle_action_(id, target_variable, value, data, ftd_external_children, styles_edited, visibility_change);
 
         function handle_action_(id, target_variable, value, data, ftd_external_children, styles_edited, visibility_change) {
@@ -1528,6 +1529,8 @@ window.ftd.post_init = function () {
     const COOKIE_DARK_MODE = "dark";
     const COOKIE_LIGHT_MODE = "light";
     const DARK_MODE_CLASS = "fpm-dark";
+    const MOBILE_CLASS = "ftd-mobile";
+    const XL_CLASS = "ftd-xl";
     const FTD_DEVICE = "ftd#device";
     const FTD_MOBILE_BREAKPOINT = "ftd#mobile-breakpoint";
     const FTD_DESKTOP_BREAKPOINT = "ftd#desktop-breakpoint";
@@ -1573,10 +1576,24 @@ window.ftd.post_init = function () {
         let mobile_breakpoint = window.ftd.get_value("main", FTD_MOBILE_BREAKPOINT);
         let desktop_breakpoint = window.ftd.get_value("main", FTD_DESKTOP_BREAKPOINT);
         if (width <= mobile_breakpoint) {
+            document.body.classList.add(MOBILE_CLASS);
+            if (document.body.classList.contains(XL_CLASS)) {
+                document.body.classList.remove(XL_CLASS);
+            }
             return "mobile";
         }
         if (width > desktop_breakpoint) {
-            return "xxl";
+            document.body.classList.add(XL_CLASS);
+            if (document.body.classList.contains(MOBILE_CLASS)) {
+                document.body.classList.remove(MOBILE_CLASS);
+            }
+            return "xl";
+        }
+        if (document.body.classList.contains(MOBILE_CLASS)) {
+            document.body.classList.remove(MOBILE_CLASS);
+        }
+        if (document.body.classList.contains(XL_CLASS)) {
+            document.body.classList.remove(XL_CLASS);
         }
         return "desktop";
     }
