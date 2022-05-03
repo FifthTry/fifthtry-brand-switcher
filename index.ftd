@@ -10,9 +10,9 @@
 index: 1
 logo: $assets.files.assets.images.doc-framework.png
 url: https://www.fifthtry.com/
-sub-title: `cdoc`: FifthTry Continuous Documentation
+sub-title: `cDoc`: FifthTry Continuous Documentation
 
-`cdoc` is an open source web application that integrates with Github and works like continuous integration.
+`cDoc` is an open source web application that integrates with Github and works like continuous integration.
 
 - Initial Setup Flow
 - Self Hosted Flow
