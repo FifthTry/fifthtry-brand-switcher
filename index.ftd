@@ -52,7 +52,7 @@ This document describes how to document a web application, written in Django, wi
 
 
 
--- ps.current-brand: 1
+-- ps.current-product: 1
 
 -- ps.switcher:
 on-left: true
