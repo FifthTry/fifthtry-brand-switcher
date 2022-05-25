@@ -8,6 +8,7 @@
 
 -- brand: cDoc
 index: 1
+mobile-logo: $assets.files.assets.images.logo-brand.svg
 logo: $assets.files.assets.images.doc-framework.png
 url: https://www.fifthtry.com/
 sub-title: `cDoc`: FifthTry Continuous Documentation
@@ -19,6 +20,7 @@ sub-title: `cDoc`: FifthTry Continuous Documentation
 
 -- brand: FTD
 index: 2
+mobile-logo: $assets.files.assets.images.logo-brand.svg
 logo: $assets.files.assets.images.ftd.png
 url: https://ftd.dev/
 sub-title: Why FTD?
@@ -30,6 +32,7 @@ FTD gives you a lot of power over your presentation, and yet it is quite easy to
 
 -- brand: FPM
 index: 3
+mobile-logo: $assets.files.assets.images.logo-brand.svg
 logo: $assets.files.assets.images.fpm.png
 url: https://fpm.dev/
 sub-title: `ftd` package manager
@@ -41,6 +44,7 @@ sub-title: `ftd` package manager
 
 -- brand: dF
 index: 4
+mobile-logo: $assets.files.assets.images.logo-brand.svg
 logo: $assets.files.assets.images.home.png
 url: https://df.fifthtry.com/
 sub-title: Documentation Framework
