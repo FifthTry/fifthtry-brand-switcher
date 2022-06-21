@@ -2,6 +2,7 @@
 
 -- fpm.package: fifthtry.github.io/fifthtry-brand-switcher
 zip: github.com/fifthtry/fifthtry-brand-switcher/archive/refs/heads/main.zip
+base: https://raw.githubusercontent.com/fifthtry/fifthtry-brand-switcher/main
 
 -- fpm.dependency: fifthtry.github.io/product-switcher as ps
 

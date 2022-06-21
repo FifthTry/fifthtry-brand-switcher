@@ -5,6 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>cDoc</title>
         <script type="ftd" id="ftd-data">{
+  "fifthtry-github-io/product-switcher/assets#files-assets-images-down-arrow-svg": {
+    "value": {
+      "$kind$": "light",
+      "dark": "/fifthtry-brand-switcher/-/fifthtry.github.io/product-switcher/assets/images/down-arrow.svg",
+      "light": "/fifthtry-brand-switcher/-/fifthtry.github.io/product-switcher/assets/images/down-arrow.svg"
+    },
+    "dependencies": {
+      "0,0,4,0": [
+        {
+          "condition": null,
+          "dependency_type": "Value",
+          "parameters": {},
+          "remaining": null
+        }
+      ]
+    }
+  },
   "fifthtry.github.io/fifthtry-brand-switcher/#button-text@0,0,5,0,0,0,1": {
     "value": null,
     "dependencies": {
@@ -76,56 +93,6 @@
           "condition": "$IsNotNull$",
           "dependency_type": "Visible",
           "parameters": {},
-          "remaining": null
-        }
-      ]
-    }
-  },
-  "fifthtry.github.io/fifthtry-brand-switcher/#color@0,0,4,0": {
-    "value": {
-      "$kind$": "light",
-      "dark": "#2dd4bf",
-      "light": "#2dd4bf"
-    },
-    "dependencies": {
-      "$style$": [
-        {
-          "condition": null,
-          "dependency_type": "Variable",
-          "parameters": {
-            "color": {
-              "default": null,
-              "value": {
-                "important": false,
-                "reference": null,
-                "value": {
-                  "$node$": "0,0,4,0",
-                  "$variable$": "fifthtry.github.io/fifthtry-brand-switcher/#color@0,0,4,0"
-                }
-              }
-            }
-          },
-          "remaining": null
-        }
-      ],
-      "0,0,4,0": [
-        {
-          "condition": "$IsNotNull$",
-          "dependency_type": "Style",
-          "parameters": {
-            "color": {
-              "default": null,
-              "value": {
-                "important": false,
-                "reference": "fifthtry.github.io/fifthtry-brand-switcher/#color@0,0,4,0",
-                "value": {
-                  "$kind$": "light",
-                  "dark": "rgba(45,212,191,1)",
-                  "light": "rgba(45,212,191,1)"
-                }
-              }
-            }
-          },
           "remaining": null
         }
       ]
@@ -592,7 +559,7 @@
               "value": {
                 "important": false,
                 "reference": null,
-                "value": "27px"
+                "value": "40px"
               }
             }
           },
@@ -3933,6 +3900,25 @@
     "value": false,
     "dependencies": {
       "$value#kind$": [
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry-github-io/product-switcher/assets#files-assets-images-down-arrow-svg": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
         {
           "condition": true,
           "dependency_type": "Variable",
@@ -13372,25 +13358,6 @@
           "condition": "mobile",
           "dependency_type": "Variable",
           "parameters": {
-            "fifthtry.github.io/octicon#is-mobile": {
-              "default": {
-                "important": false,
-                "reference": null,
-                "value": false
-              },
-              "value": {
-                "important": false,
-                "reference": null,
-                "value": true
-              }
-            }
-          },
-          "remaining": null
-        },
-        {
-          "condition": "mobile",
-          "dependency_type": "Variable",
-          "parameters": {
             "fifthtry.github.io/package-doc/dark-mode-switcher#is-mobile": {
               "default": {
                 "important": false,
@@ -13449,6 +13416,25 @@
           "dependency_type": "Variable",
           "parameters": {
             "fifthtry.github.io/package-doc/language-switcher#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/package-doc/product-switcher#is-mobile": {
               "default": {
                 "important": false,
                 "reference": null,
@@ -13991,20 +13977,20 @@ body.fpm-dark .ft_md a:visited code {
 
 
 
-.b_10 {
-    background-color: rgba(45,212,191,1)
-}
-
-
-
-.b_14 {
+.b_13 {
     border-color: rgba(67,69,71,1)
 }
 
 
 
-.b_5 {
+.b_4 {
     background-color: rgba(24,24,27,1)
+}
+
+
+
+.b_9 {
+    background-color: rgba(45,212,191,1)
 }
 
 
@@ -14015,20 +14001,20 @@ body.fpm-dark .b_0 {
 
 
 
-body.fpm-dark .b_10 {
-    background-color: rgba(45,212,191,1)
-}
-
-
-
-body.fpm-dark .b_14 {
+body.fpm-dark .b_13 {
     border-color: rgba(67,69,71,1)
 }
 
 
 
-body.fpm-dark .b_5 {
+body.fpm-dark .b_4 {
     background-color: rgba(24,24,27,1)
+}
+
+
+
+body.fpm-dark .b_9 {
+    background-color: rgba(45,212,191,1)
 }
 
 
@@ -14039,13 +14025,13 @@ body.fpm-dark .c_1 {
 
 
 
-body.fpm-dark .c_11 {
+body.fpm-dark .c_10 {
     color: rgba(254,255,255,1)
 }
 
 
 
-body.fpm-dark .c_12 {
+body.fpm-dark .c_11 {
     color: rgba(45,212,191,1)
 }
 
@@ -14057,13 +14043,13 @@ body.fpm-dark .c_2 {
 
 
 
-body.fpm-dark .c_8 {
+body.fpm-dark .c_7 {
     color: rgba(168,162,158,1)
 }
 
 
 
-body.ftd-mobile .fffll_13 {
+body.ftd-mobile .fffll_12 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 16px;
 font-weight: 700;
@@ -14073,7 +14059,7 @@ line-height: 24px
 
 
 
-body.ftd-mobile .fffll_15 {
+body.ftd-mobile .fffll_14 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -14083,7 +14069,7 @@ line-height: 20px
 
 
 
-body.ftd-mobile .fffll_16 {
+body.ftd-mobile .fffll_15 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 14px;
 font-weight: 400;
@@ -14103,17 +14089,7 @@ line-height: 16px
 
 
 
-body.ftd-mobile .fffll_4 {
-    font-family: fifthtry-github-io-octicon-Octicon;
-font-size: 16px;
-font-weight: 400;
-letter-spacing: 0px;
-line-height: 16px
-}
-
-
-
-body.ftd-mobile .fffll_6 {
+body.ftd-mobile .fffll_5 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 14px;
 font-weight: 700;
@@ -14123,7 +14099,7 @@ line-height: 32px
 
 
 
-body.ftd-mobile .fffll_7 {
+body.ftd-mobile .fffll_6 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 700;
@@ -14133,7 +14109,7 @@ line-height: 24px
 
 
 
-body.ftd-mobile .fffll_9 {
+body.ftd-mobile .fffll_8 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -14143,7 +14119,7 @@ line-height: 24px
 
 
 
-body.ftd-xl .fffll_13 {
+body.ftd-xl .fffll_12 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 16px;
 font-weight: 700;
@@ -14153,7 +14129,7 @@ line-height: 24px
 
 
 
-body.ftd-xl .fffll_15 {
+body.ftd-xl .fffll_14 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -14163,7 +14139,7 @@ line-height: 20px
 
 
 
-body.ftd-xl .fffll_16 {
+body.ftd-xl .fffll_15 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 14px;
 font-weight: 400;
@@ -14183,17 +14159,7 @@ line-height: 16px
 
 
 
-body.ftd-xl .fffll_4 {
-    font-family: fifthtry-github-io-octicon-Octicon;
-font-size: 16px;
-font-weight: 400;
-letter-spacing: 0px;
-line-height: 16px
-}
-
-
-
-body.ftd-xl .fffll_6 {
+body.ftd-xl .fffll_5 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 14px;
 font-weight: 700;
@@ -14203,7 +14169,7 @@ line-height: 32px
 
 
 
-body.ftd-xl .fffll_7 {
+body.ftd-xl .fffll_6 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 700;
@@ -14213,7 +14179,7 @@ line-height: 24px
 
 
 
-body.ftd-xl .fffll_9 {
+body.ftd-xl .fffll_8 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -14229,13 +14195,13 @@ line-height: 24px
 
 
 
-.c_11 {
+.c_10 {
     color: rgba(254,255,255,1)
 }
 
 
 
-.c_12 {
+.c_11 {
     color: rgba(45,212,191,1)
 }
 
@@ -14247,13 +14213,13 @@ line-height: 24px
 
 
 
-.c_8 {
+.c_7 {
     color: rgba(168,162,158,1)
 }
 
 
 
-.fffll_13 {
+.fffll_12 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 16px;
 font-weight: 700;
@@ -14263,7 +14229,7 @@ line-height: 24px
 
 
 
-.fffll_15 {
+.fffll_14 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -14273,7 +14239,7 @@ line-height: 20px
 
 
 
-.fffll_16 {
+.fffll_15 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 14px;
 font-weight: 400;
@@ -14293,17 +14259,7 @@ line-height: 16px
 
 
 
-.fffll_4 {
-    font-family: fifthtry-github-io-octicon-Octicon;
-font-size: 16px;
-font-weight: 400;
-letter-spacing: 0px;
-line-height: 16px
-}
-
-
-
-.fffll_6 {
+.fffll_5 {
     font-family: fifthtry-github-io-inter-Inter;
 font-size: 14px;
 font-weight: 700;
@@ -14313,7 +14269,7 @@ line-height: 32px
 
 
 
-.fffll_7 {
+.fffll_6 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 700;
@@ -14323,7 +14279,7 @@ line-height: 24px
 
 
 
-.fffll_9 {
+.fffll_8 {
     font-family: sans-serif;
 font-size: 16px;
 font-weight: 400;
@@ -14334,363 +14290,37 @@ line-height: 24px
 </style>
     </head>
     <body>
-        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;true&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-right: auto; text-decoration: none; white-space: initial" ><div data-id="0,0:main" data-spacing="margin-left:4px" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,0&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;true&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px; position: relative; text-decoration: none; white-space: initial" class="b_0 c_1"><div data-id="0,0,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/doc-framework.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 24px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-left: 4px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">cDoc</div></div><div data-id="0,0,1:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 4px; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,1,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/ftd.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 24px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,0,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-left: 4px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">FTD</div></div><div data-id="0,0,2:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 4px; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,2,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/fpm.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 24px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,0,2,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-left: 4px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">FPM</div></div><div data-id="0,0,3:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 4px; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,3,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/home.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 24px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,0,3,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-left: 4px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">dF</div></div><div data-id="0,0,4:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 4px; padding-top: 4px; text-decoration: none; white-space: initial" ><div data-id="0,0,4,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; color: rgba(45,212,191,1); text-align: left; text-decoration: none; white-space: initial" class="ft_md fffll_4"></div></div><div data-id="0,0,5:main" onmouseleave="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,0&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;false&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}},{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;1&quot;,&quot;reference&quot;:&quot;ps#current-product&quot;},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,0&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;true&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 8px; border-style: solid; border-width: 0px; box-shadow: 0px 4px 4px 0px rgba(45,212,191,0.2); box-sizing: border-box; cursor: pointer; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; left: -3px; margin-left: 4px; min-height: 255px; min-width: 460px; position: absolute; text-decoration: none; top: 40px; white-space: initial; width: 100%; z-index: 11" class="b_5"><div data-id="0,0,5,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-shadow: 0px 1px 8px 0px rgba(45,212,191,0.14); box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; min-height: 255px; min-width: 460px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-shadow: 0px 3px 4px 0px rgba(45,212,191,0.14); box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; min-height: 255px; min-width: 460px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="title-row:0,0,5,0,0,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 50%" ><div data-id="0,0,5,0,0,0,0,0:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;1&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="b_5"><a data-id="0,0,5,0,0,0,0,0,0:main" href="https://www.fifthtry.com/" style="align-items: flex-start; background-color: rgba(20,20,20,1); border-bottom-left-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(255,255,255,1); cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 24px; padding-left: 16px; padding-right: 24px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0,0,5,0,0,0,0,0,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/doc-framework.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 32px; margin-right: 8px; text-decoration: none; white-space: initial; width: 32px"><div data-id="0,0,5,0,0,0,0,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_6">cDoc</div></a></div><div data-id="0,0,5,0,0,0,0,1:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;2&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="b_5"><a data-id="0,0,5,0,0,0,0,1,0:main" href="https://ftd.dev/" style="align-items: flex-start; background-color: rgba(24,24,27,1); border-bottom-left-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(168,162,158,1); cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 24px; padding-left: 16px; padding-right: 24px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0,0,5,0,0,0,0,1,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/ftd.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 32px; margin-right: 8px; text-decoration: none; white-space: initial; width: 32px"><div data-id="0,0,5,0,0,0,0,1,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_6">FTD</div></a></div><div data-id="0,0,5,0,0,0,0,2:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;3&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="b_5"><a data-id="0,0,5,0,0,0,0,2,0:main" href="https://fpm.dev/" style="align-items: flex-start; background-color: rgba(24,24,27,1); border-bottom-left-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(168,162,158,1); cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 24px; padding-left: 16px; padding-right: 24px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0,0,5,0,0,0,0,2,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/fpm.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 32px; margin-right: 8px; text-decoration: none; white-space: initial; width: 32px"><div data-id="0,0,5,0,0,0,0,2,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_6">FPM</div></a></div><div data-id="0,0,5,0,0,0,0,3:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;4&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="b_5"><a data-id="0,0,5,0,0,0,0,3,0:main" href="https://df.fifthtry.com/" style="align-items: flex-start; background-color: rgba(24,24,27,1); border-bottom-left-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(168,162,158,1); cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 24px; padding-left: 16px; padding-right: 24px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0,0,5,0,0,0,0,3,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/home.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 32px; margin-right: 8px; text-decoration: none; white-space: initial; width: 32px"><div data-id="0,0,5,0,0,0,0,3,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_6">dF</div></a></div></div><a data-id="0,0,5,0,0,0,1:main" href="https://www.fifthtry.com/" style="align-items: flex-start; border-bottom-right-radius: 8px !important; border-radius: 0px; border-style: solid; border-top-right-radius: 8px !important; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; min-height: 288px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="right-row:0,0,5,0,0,0,1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0,1,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,0,5,0,0,0,1,0,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_7"><code>cDoc</code>: FifthTry Continuous Documentation</div><div data-id="0,0,5,0,0,0,1,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_8 ft_md fffll_9"><p data-id="0,0,5,0,0,0,1,0,0,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p><code>cDoc</code> is an open source web application that integrates with Github and works like continuous integration.</p>
+        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;true&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; align-self: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-right: auto; text-decoration: none; white-space: initial" ><div data-id="0,0:main" data-spacing="margin-left:8px" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,0&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;true&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-left: 8px; padding-right: 8px; padding-top: 8px; position: relative; text-decoration: none; white-space: initial" class="b_0 c_1"><div data-id="0,0,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/doc-framework.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 24px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-left: 4px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">cDoc</div></div><div data-id="0,0,1:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 8px; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,1,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/ftd.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 24px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,0,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-left: 4px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">FTD</div></div><div data-id="0,0,2:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 8px; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,2,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/fpm.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 24px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,0,2,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-left: 4px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">FPM</div></div><div data-id="0,0,3:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 8px; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,3,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/home.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 24px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,0,3,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; margin-left: 4px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">dF</div></div><div data-id="0,0,4:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; margin-left: 8px; padding-top: 10px; text-decoration: none; white-space: initial" ><img alt="" data-id="0,0,4,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/product-switcher/assets/images/down-arrow.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: auto; text-decoration: none; white-space: initial; width: 12px"></div><div data-id="0,0,5:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,0&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;true&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" onmouseleave="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,0&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;false&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}},{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;1&quot;,&quot;reference&quot;:&quot;ps#current-product&quot;},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 8px; border-style: solid; border-width: 0px; box-shadow: 0px 4px 4px 0px rgba(45,212,191,0.2); box-sizing: border-box; cursor: pointer; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; left: -3px; margin-left: 8px; min-height: 255px; min-width: 460px; position: absolute; text-decoration: none; top: 40px; white-space: initial; width: 100%; z-index: 11" class="b_4"><div data-id="0,0,5,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-shadow: 0px 1px 8px 0px rgba(45,212,191,0.14); box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; min-height: 255px; min-width: 460px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-shadow: 0px 3px 4px 0px rgba(45,212,191,0.14); box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; min-height: 255px; min-width: 460px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="title-row:0,0,5,0,0,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 50%" ><div data-id="0,0,5,0,0,0,0,0:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;1&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="b_4"><a data-id="0,0,5,0,0,0,0,0,0:main" href="https://www.fifthtry.com/" style="align-items: flex-start; background-color: rgba(20,20,20,1); border-bottom-left-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(255,255,255,1); cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 24px; padding-left: 16px; padding-right: 24px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0,0,5,0,0,0,0,0,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/doc-framework.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 32px; margin-right: 8px; text-decoration: none; white-space: initial; width: 32px"><div data-id="0,0,5,0,0,0,0,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_5">cDoc</div></a></div><div data-id="0,0,5,0,0,0,0,1:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;2&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="b_4"><a data-id="0,0,5,0,0,0,0,1,0:main" href="https://ftd.dev/" style="align-items: flex-start; background-color: rgba(24,24,27,1); border-bottom-left-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(168,162,158,1); cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 24px; padding-left: 16px; padding-right: 24px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0,0,5,0,0,0,0,1,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/ftd.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 32px; margin-right: 8px; text-decoration: none; white-space: initial; width: 32px"><div data-id="0,0,5,0,0,0,0,1,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_5">FTD</div></a></div><div data-id="0,0,5,0,0,0,0,2:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;3&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="b_4"><a data-id="0,0,5,0,0,0,0,2,0:main" href="https://fpm.dev/" style="align-items: flex-start; background-color: rgba(24,24,27,1); border-bottom-left-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(168,162,158,1); cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 24px; padding-left: 16px; padding-right: 24px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0,0,5,0,0,0,0,2,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/fpm.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 32px; margin-right: 8px; text-decoration: none; white-space: initial; width: 32px"><div data-id="0,0,5,0,0,0,0,2,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_5">FPM</div></a></div><div data-id="0,0,5,0,0,0,0,3:main" onmouseenter="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;ps#var-current-product&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;4&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;integer&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="b_4"><a data-id="0,0,5,0,0,0,0,3,0:main" href="https://df.fifthtry.com/" style="align-items: flex-start; background-color: rgba(24,24,27,1); border-bottom-left-radius: 4px !important; border-radius: 0px; border-style: solid; border-top-left-radius: 4px !important; border-width: 0px; box-sizing: border-box; color: rgba(168,162,158,1); cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 24px; padding-left: 16px; padding-right: 24px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0,0,5,0,0,0,0,3,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/home.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 32px; margin-right: 8px; text-decoration: none; white-space: initial; width: 32px"><div data-id="0,0,5,0,0,0,0,3,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_5">dF</div></a></div></div><a data-id="0,0,5,0,0,0,1:main" href="https://www.fifthtry.com/" style="align-items: flex-start; border-bottom-right-radius: 8px !important; border-radius: 0px; border-style: solid; border-top-right-radius: 8px !important; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; min-height: 288px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="right-row:0,0,5,0,0,0,1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0,1,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,0,5,0,0,0,1,0,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_6"><code>cDoc</code>: FifthTry Continuous Documentation</div><div data-id="0,0,5,0,0,0,1,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_7 ft_md fffll_8"><p data-id="0,0,5,0,0,0,1,0,0,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p><code>cDoc</code> is an open source web application that integrates with Github and works like continuous integration.</p>
 </p><p data-id="0,0,5,0,0,0,1,0,0,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><ul>
 <li>Initial Setup Flow</li>
 <li>Self Hosted Flow</li>
 </ul>
-</p></div><div data-id="0,0,5,0,0,0,1,0,0,2:main" style="border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; padding-bottom: 8px; padding-left: 40px; padding-right: 40px; padding-top: 8px; text-align: left; text-decoration: none; white-space: initial" class="b_10 c_11 ft_md fffll_9"></div></div></div></a><a data-id="0,0,5,0,0,0,2:main" href="https://ftd.dev/" style="align-items: flex-start; border-bottom-right-radius: 8px !important; border-radius: 0px; border-style: solid; border-top-right-radius: 8px !important; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; min-height: 288px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="right-row:0,0,5,0,0,0,2,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0,2,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,0,5,0,0,0,2,0,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_7">Why FTD?</div><div data-id="0,0,5,0,0,0,2,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_8 ft_md fffll_9"><p data-id="0,0,5,0,0,0,2,0,0,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p>FTD gives you a lot of power over your presentation, and yet it is quite easy to learn.</p>
+</p></div><div data-id="0,0,5,0,0,0,1,0,0,2:main" style="border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; padding-bottom: 8px; padding-left: 40px; padding-right: 40px; padding-top: 8px; text-align: left; text-decoration: none; white-space: initial" class="b_9 c_10 ft_md fffll_8"></div></div></div></a><a data-id="0,0,5,0,0,0,2:main" href="https://ftd.dev/" style="align-items: flex-start; border-bottom-right-radius: 8px !important; border-radius: 0px; border-style: solid; border-top-right-radius: 8px !important; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; min-height: 288px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="right-row:0,0,5,0,0,0,2,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0,2,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,0,5,0,0,0,2,0,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_6">Why FTD?</div><div data-id="0,0,5,0,0,0,2,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_7 ft_md fffll_8"><p data-id="0,0,5,0,0,0,2,0,0,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p>FTD gives you a lot of power over your presentation, and yet it is quite easy to learn.</p>
 </p><p data-id="0,0,5,0,0,0,2,0,0,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><ul>
 <li>FTD Is Easy To Learn</li>
 <li>FTD Is Quite Powerful</li>
 </ul>
-</p></div><div data-id="0,0,5,0,0,0,2,0,0,2:main" style="border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; padding-bottom: 8px; padding-left: 40px; padding-right: 40px; padding-top: 8px; text-align: left; text-decoration: none; white-space: initial" class="b_10 c_11 ft_md fffll_9"></div></div></div></a><a data-id="0,0,5,0,0,0,3:main" href="https://fpm.dev/" style="align-items: flex-start; border-bottom-right-radius: 8px !important; border-radius: 0px; border-style: solid; border-top-right-radius: 8px !important; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; min-height: 288px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="right-row:0,0,5,0,0,0,3,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0,3,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,0,5,0,0,0,3,0,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_7"><code>ftd</code> package manager</div><div data-id="0,0,5,0,0,0,3,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_8 ft_md fffll_9"><p data-id="0,0,5,0,0,0,3,0,0,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p><code>fpm</code> is <code>ftd package manager</code>, defines a package format for packaging <code>ftd</code> files.</p>
+</p></div><div data-id="0,0,5,0,0,0,2,0,0,2:main" style="border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; padding-bottom: 8px; padding-left: 40px; padding-right: 40px; padding-top: 8px; text-align: left; text-decoration: none; white-space: initial" class="b_9 c_10 ft_md fffll_8"></div></div></div></a><a data-id="0,0,5,0,0,0,3:main" href="https://fpm.dev/" style="align-items: flex-start; border-bottom-right-radius: 8px !important; border-radius: 0px; border-style: solid; border-top-right-radius: 8px !important; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; min-height: 288px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="right-row:0,0,5,0,0,0,3,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0,3,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,0,5,0,0,0,3,0,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_6"><code>ftd</code> package manager</div><div data-id="0,0,5,0,0,0,3,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_7 ft_md fffll_8"><p data-id="0,0,5,0,0,0,3,0,0,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p><code>fpm</code> is <code>ftd package manager</code>, defines a package format for packaging <code>ftd</code> files.</p>
 </p><p data-id="0,0,5,0,0,0,3,0,0,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><ul>
 <li>Distributed Package Manager</li>
 <li>Translation Tracking</li>
 </ul>
-</p></div><div data-id="0,0,5,0,0,0,3,0,0,2:main" style="border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; padding-bottom: 8px; padding-left: 40px; padding-right: 40px; padding-top: 8px; text-align: left; text-decoration: none; white-space: initial" class="b_10 c_11 ft_md fffll_9"></div></div></div></a><a data-id="0,0,5,0,0,0,4:main" href="https://df.fifthtry.com/" style="align-items: flex-start; border-bottom-right-radius: 8px !important; border-radius: 0px; border-style: solid; border-top-right-radius: 8px !important; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; min-height: 288px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="right-row:0,0,5,0,0,0,4,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0,4,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,0,5,0,0,0,4,0,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_7">Documentation Framework</div><div data-id="0,0,5,0,0,0,4,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_8 ft_md fffll_9">This document describes how to document a web application, written in Django, with HTML/CSS/JS as the frontend.</div><div data-id="0,0,5,0,0,0,4,0,0,2:main" style="border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; padding-bottom: 8px; padding-left: 40px; padding-right: 40px; padding-top: 8px; text-align: left; text-decoration: none; white-space: initial" class="b_10 c_11 ft_md fffll_9"></div></div></div></a></div></div></div></div></div><div data-id="0,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,1,0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,1&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;true&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,1,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_12 ft_md fffll_6">All Product -&gt;</div></div><div data-id="0,1,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; bottom: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; height: calc(100vh - 0px); justify-content: flex-start; left: 0px; overflow-y: auto; position: fixed; right: 0px; text-decoration: none; top: 0px; white-space: initial; width: calc(100% - 48px); z-index: 1000" class="b_0"><div data-id="0,1,1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-left: 24px; padding-right: 24px; padding-top: 32px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,1,1,0,0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,1&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;false&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; padding-bottom: 16px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_13">&lt;- back</div><a data-id="0,1,1,0,1:main" href="https://www.fifthtry.com/" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-top: 12px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="logo-container:0,1,1,0,1,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-top-width: 1px !important; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-top: 8px; text-decoration: none; white-space: initial; width: 100%" class="b_14"><img alt="" data-id="0,1,1,0,1,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/logo-brand.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 36px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,1,1,0,1,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: 4px; padding-top: 12px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">cDoc</div></div><div data-id="0,1,1,0,1,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="c_8"><div data-id="0,1,1,0,1,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_15"><code>cDoc</code>: FifthTry Continuous Documentation</div><div data-id="0,1,1,0,1,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_15"><p data-id="0,1,1,0,1,1,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p><code>cDoc</code> is an open source web application that integrates with Github and works like continuous integration.</p>
+</p></div><div data-id="0,0,5,0,0,0,3,0,0,2:main" style="border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; padding-bottom: 8px; padding-left: 40px; padding-right: 40px; padding-top: 8px; text-align: left; text-decoration: none; white-space: initial" class="b_9 c_10 ft_md fffll_8"></div></div></div></a><a data-id="0,0,5,0,0,0,4:main" href="https://df.fifthtry.com/" style="align-items: flex-start; border-bottom-right-radius: 8px !important; border-radius: 0px; border-style: solid; border-top-right-radius: 8px !important; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; min-height: 288px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="right-row:0,0,5,0,0,0,4,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; padding-top: 16px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0,5,0,0,0,4,0,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,0,5,0,0,0,4,0,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_6">Documentation Framework</div><div data-id="0,0,5,0,0,0,4,0,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_7 ft_md fffll_8">This document describes how to document a web application, written in Django, with HTML/CSS/JS as the frontend.</div><div data-id="0,0,5,0,0,0,4,0,0,2:main" style="border-radius: 4px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: none; padding-bottom: 8px; padding-left: 40px; padding-right: 40px; padding-top: 8px; text-align: left; text-decoration: none; white-space: initial" class="b_9 c_10 ft_md fffll_8"></div></div></div></a></div></div></div></div></div><div data-id="0,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial" ><div data-id="0,1,0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,1&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;true&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,1,0,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_11 ft_md fffll_5">All Product -&gt;</div></div><div data-id="0,1,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; bottom: 0px; box-sizing: border-box; display: none; flex-direction: row; flex-wrap: nowrap; height: calc(100vh - 0px); justify-content: flex-start; left: 0px; overflow-y: auto; position: fixed; right: 0px; text-decoration: none; top: 0px; white-space: initial; width: calc(100% - 48px); z-index: 1000" class="b_0"><div data-id="0,1,1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-left: 24px; padding-right: 24px; padding-top: 32px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,1,1,0,0:main" onclick="window.ftd.handle_event(event, 'main', '[{&quot;action&quot;:&quot;set-value&quot;,&quot;target&quot;:&quot;fifthtry.github.io/fifthtry-brand-switcher/#mouse-events@0,1&quot;,&quot;parameters&quot;:{&quot;value&quot;:[{&quot;value&quot;:&quot;false&quot;,&quot;reference&quot;:null},{&quot;value&quot;:&quot;boolean&quot;,&quot;reference&quot;:null}]}}]', this)" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; padding-bottom: 16px; padding-top: 4px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_12">&lt;- back</div><a data-id="0,1,1,0,1:main" href="https://www.fifthtry.com/" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-top: 12px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="logo-container:0,1,1,0,1,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-top-width: 1px !important; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-top: 8px; text-decoration: none; white-space: initial; width: 100%" class="b_13"><img alt="" data-id="0,1,1,0,1,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/logo-brand.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 36px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,1,1,0,1,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: 4px; padding-top: 12px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">cDoc</div></div><div data-id="0,1,1,0,1,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="c_7"><div data-id="0,1,1,0,1,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_14"><code>cDoc</code>: FifthTry Continuous Documentation</div><div data-id="0,1,1,0,1,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_14"><p data-id="0,1,1,0,1,1,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p><code>cDoc</code> is an open source web application that integrates with Github and works like continuous integration.</p>
 </p><p data-id="0,1,1,0,1,1,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><ul>
 <li>Initial Setup Flow</li>
 <li>Self Hosted Flow</li>
 </ul>
-</p></div><div data-id="0,1,1,0,1,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_12 ft_md fffll_16">explore -&gt;</div></div></a><a data-id="0,1,1,0,2:main" href="https://ftd.dev/" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-top: 12px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="logo-container:0,1,1,0,2,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-top-width: 1px !important; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-top: 8px; text-decoration: none; white-space: initial; width: 100%" class="b_14"><img alt="" data-id="0,1,1,0,2,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/logo-brand.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 36px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,1,1,0,2,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: 4px; padding-top: 12px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">FTD</div></div><div data-id="0,1,1,0,2,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="c_8"><div data-id="0,1,1,0,2,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_15">Why FTD?</div><div data-id="0,1,1,0,2,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_15"><p data-id="0,1,1,0,2,1,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p>FTD gives you a lot of power over your presentation, and yet it is quite easy to learn.</p>
+</p></div><div data-id="0,1,1,0,1,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_11 ft_md fffll_15">explore -&gt;</div></div></a><a data-id="0,1,1,0,2:main" href="https://ftd.dev/" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-top: 12px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="logo-container:0,1,1,0,2,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-top-width: 1px !important; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-top: 8px; text-decoration: none; white-space: initial; width: 100%" class="b_13"><img alt="" data-id="0,1,1,0,2,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/logo-brand.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 36px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,1,1,0,2,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: 4px; padding-top: 12px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">FTD</div></div><div data-id="0,1,1,0,2,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="c_7"><div data-id="0,1,1,0,2,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_14">Why FTD?</div><div data-id="0,1,1,0,2,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_14"><p data-id="0,1,1,0,2,1,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p>FTD gives you a lot of power over your presentation, and yet it is quite easy to learn.</p>
 </p><p data-id="0,1,1,0,2,1,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><ul>
 <li>FTD Is Easy To Learn</li>
 <li>FTD Is Quite Powerful</li>
 </ul>
-</p></div><div data-id="0,1,1,0,2,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_12 ft_md fffll_16">explore -&gt;</div></div></a><a data-id="0,1,1,0,3:main" href="https://fpm.dev/" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-top: 12px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="logo-container:0,1,1,0,3,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-top-width: 1px !important; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-top: 8px; text-decoration: none; white-space: initial; width: 100%" class="b_14"><img alt="" data-id="0,1,1,0,3,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/logo-brand.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 36px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,1,1,0,3,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: 4px; padding-top: 12px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">FPM</div></div><div data-id="0,1,1,0,3,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="c_8"><div data-id="0,1,1,0,3,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_15"><code>ftd</code> package manager</div><div data-id="0,1,1,0,3,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_15"><p data-id="0,1,1,0,3,1,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p><code>fpm</code> is <code>ftd package manager</code>, defines a package format for packaging <code>ftd</code> files.</p>
+</p></div><div data-id="0,1,1,0,2,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_11 ft_md fffll_15">explore -&gt;</div></div></a><a data-id="0,1,1,0,3:main" href="https://fpm.dev/" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-top: 12px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="logo-container:0,1,1,0,3,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-top-width: 1px !important; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-top: 8px; text-decoration: none; white-space: initial; width: 100%" class="b_13"><img alt="" data-id="0,1,1,0,3,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/logo-brand.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 36px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,1,1,0,3,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: 4px; padding-top: 12px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">FPM</div></div><div data-id="0,1,1,0,3,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="c_7"><div data-id="0,1,1,0,3,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_14"><code>ftd</code> package manager</div><div data-id="0,1,1,0,3,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_14"><p data-id="0,1,1,0,3,1,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><p><code>fpm</code> is <code>ftd package manager</code>, defines a package format for packaging <code>ftd</code> files.</p>
 </p><p data-id="0,1,1,0,3,1,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><ul>
 <li>Distributed Package Manager</li>
 <li>Translation Tracking</li>
 </ul>
-</p></div><div data-id="0,1,1,0,3,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_12 ft_md fffll_16">explore -&gt;</div></div></a><a data-id="0,1,1,0,4:main" href="https://df.fifthtry.com/" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-top: 12px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="logo-container:0,1,1,0,4,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-top-width: 1px !important; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-top: 8px; text-decoration: none; white-space: initial; width: 100%" class="b_14"><img alt="" data-id="0,1,1,0,4,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/logo-brand.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 36px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,1,1,0,4,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: 4px; padding-top: 12px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">dF</div></div><div data-id="0,1,1,0,4,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="c_8"><div data-id="0,1,1,0,4,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_15">Documentation Framework</div><div data-id="0,1,1,0,4,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_15">This document describes how to document a web application, written in Django, with HTML/CSS/JS as the frontend.</div><div data-id="0,1,1,0,4,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_12 ft_md fffll_16">explore -&gt;</div></div></a></div></div></div></div></div><style>
-
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-Inter }
-
-
-@font-face { font-display: swap;
-font-style: normal;
-font-weight: normal;
-src: url(-/fifthtry.github.io/octicon/static/octicons.woff) format('woff');
-font-family: fifthtry-github-io-octicon-Octicon }
-
-
-</style>
+</p></div><div data-id="0,1,1,0,3,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_11 ft_md fffll_15">explore -&gt;</div></div></a><a data-id="0,1,1,0,4:main" href="https://df.fifthtry.com/" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-top: 12px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="logo-container:0,1,1,0,4,0:main" data-spacing="margin-left:4px" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-top-width: 1px !important; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; padding-bottom: 8px; padding-top: 8px; text-decoration: none; white-space: initial; width: 100%" class="b_13"><img alt="" data-id="0,1,1,0,4,0,0:main" src="/fifthtry-brand-switcher/-/fifthtry.github.io/fifthtry-brand-switcher/assets/images/logo-brand.svg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; height: 36px; text-decoration: none; white-space: initial; width: auto"><div data-id="0,1,1,0,4,0,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: 4px; padding-top: 12px; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_3">dF</div></div><div data-id="0,1,1,0,4,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" class="c_7"><div data-id="0,1,1,0,4,1,0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="c_2 ft_md fffll_14">Documentation Framework</div><div data-id="0,1,1,0,4,1,1:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial; width: 100%" class="ft_md fffll_14">This document describes how to document a web application, written in Django, with HTML/CSS/JS as the frontend.</div><div data-id="0,1,1,0,4,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: nowrap" class="c_11 ft_md fffll_15">explore -&gt;</div></div></a></div></div></div></div></div>
         <script>
             // all ftd_utils are meant to be pure functions only: they can only depend on the
 // input passed, not on closures or global data etc
