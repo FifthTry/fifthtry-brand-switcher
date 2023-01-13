@@ -5,7 +5,7 @@
 
 
 
--- ps.product: cDoc
+-- $ps.product: cDoc
 index: 1
 mobile-logo: $assets.files.assets.images.logo-brand.svg
 logo: $assets.files.assets.images.doc-framework.png
@@ -17,7 +17,7 @@ sub-title: `cDoc`: FifthTry Continuous Documentation
 - Initial Setup Flow
 - Self Hosted Flow
 
--- ps.product: FTD
+-- $ps.product: FTD
 index: 2
 mobile-logo: $assets.files.assets.images.logo-brand.svg
 logo: $assets.files.assets.images.ftd.png
@@ -29,7 +29,7 @@ FTD gives you a lot of power over your presentation, and yet it is quite easy to
 - FTD Is Easy To Learn
 - FTD Is Quite Powerful
 
--- ps.product: FPM
+-- $ps.product: FPM
 index: 3
 mobile-logo: $assets.files.assets.images.logo-brand.svg
 logo: $assets.files.assets.images.fpm.png
@@ -41,7 +41,7 @@ sub-title: `ftd` package manager
 - Distributed Package Manager
 - Translation Tracking
 
--- ps.product: dF
+-- $ps.product: dF
 index: 4
 mobile-logo: $assets.files.assets.images.logo-brand.svg
 logo: $assets.files.assets.images.home.png
@@ -52,7 +52,19 @@ This document describes how to document a web application, written in Django, wi
 
 
 
--- ps.current-product: 1
+-- $ps.current-product: 1
+
+-- ftd.column:
+width: fill-container
+align-self: center
+spacing.px: 20
+padding-horizontal.px.px: 20
+padding-vertical.px.px: 20
+background.solid: $inherited.colors.background.base
+
 
 -- ps.switcher:
-on-left: true
+$on-left: true
+
+
+-- end: ftd.column
