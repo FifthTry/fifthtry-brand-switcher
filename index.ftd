@@ -57,7 +57,7 @@ This document describes how to document a web application, written in Django, wi
 -- ftd.column:
 width: fill-container
 align-self: center
-spacing.px: 20
+spacing.fixed.px: 20
 padding-horizontal.px.px: 20
 padding-vertical.px.px: 20
 background.solid: $inherited.colors.background.base
