@@ -29,14 +29,14 @@ FTD gives you a lot of power over your presentation, and yet it is quite easy to
 - FTD Is Easy To Learn
 - FTD Is Quite Powerful
 
--- $ps.product: FPM
+-- $ps.product: FASTN
 index: 3
 mobile-logo: $assets.files.assets.images.logo-brand.svg
-logo: $assets.files.assets.images.fpm.png
-url: https://fpm.dev/
+logo: $assets.files.assets.images.fastn.png
+url: https://fastn.dev/
 sub-title: `ftd` package manager
 
-`fpm` is `ftd package manager`, defines a package format for packaging `ftd` files.
+`fastn` is `ftd package manager`, defines a package format for packaging `ftd` files.
 
 - Distributed Package Manager
 - Translation Tracking
