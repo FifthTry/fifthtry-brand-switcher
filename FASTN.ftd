@@ -1,8 +1,6 @@
 -- import: fastn
 
 -- fastn.package: fifthtry.github.io/fifthtry-brand-switcher
-zip: github.com/fifthtry/fifthtry-brand-switcher/archive/refs/heads/main.zip
-download-base-url: https://raw.githubusercontent.com/fifthtry/fifthtry-brand-switcher/main
 
 -- fastn.dependency: fifthtry.github.io/product-switcher as ps
 
